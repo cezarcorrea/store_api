@@ -39,7 +39,7 @@ Desenvolvimento de uma aplicação simples a partir do TDD, que permite entender
 |:--:|
 | Diagrama de C4 da Store API |
 
-### Banco de dados - MongoDB
+### Banco de dados - PostgreSQL
 |![C4](/docs/img/product.drawio.png)|
 |:--:|
 | Database - Store API |
@@ -184,6 +184,6 @@ Vamos utilizar Pyenv + Poetry, link de como preparar o ambiente abaixo:
 
 [model-serializer](https://docs.pydantic.dev/dev/api/functional_serializers/#pydantic.functional_serializers.model_serializer)
 
-[mongo-motor](https://motor.readthedocs.io/en/stable/)
+[psycopg2-binary](https://www.psycopg.org/docs/)
 
 [pytest](https://docs.pytest.org/en/7.4.x/)

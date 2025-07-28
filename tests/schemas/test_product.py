@@ -1,7 +1,7 @@
 from pydantic import ValidationError
 
 import pytest
-from store.schemas.product import ProductIn
+from store.schemas.schemas_product import ProductIn
 from tests.factories import product_data
 
 
@@ -23,5 +23,5 @@ def test_schemas_return_raise():
         "loc": ("status",),
         "msg": "Field required",
         "input": {"name": "Iphone 14 Pro Max", "quantity": 10, "price": 8.5},
-        "url": "https://errors.pydantic.dev/2.5/v/missing",
+        "url": "https://errors.pydantic.dev/2.11/v/missing",
     }

@@ -1,11 +1,10 @@
-version: '3'
-
 services:
   db:
-    image: 'zcube/bitnami-compat-mongodb'
-    ports:
-      - 27017:27017
-    restart: on-failure
+    image: postgres:17
+    container_name: postgres_db
     environment:
-      - MONGODB_ADVERTISED_HOSTNAME=localhost
-      - ALLOW_EMPTY_PASSWORD=yes
+      POSTGRES_DB: store
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: store$123
+    ports:
+      - "5433:5432"
